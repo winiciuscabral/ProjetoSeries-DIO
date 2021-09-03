@@ -8,34 +8,34 @@ namespace ProjetoSeries
     {
         private List<Serie> listaSerie = new List<Serie>();
 
-        public void Atualiza(int id, Serie entidade)
+        public void Atualiza(int id, Serie obj)
         {
-            throw new NotImplementedException();
+            listaSerie[id] = obj;
         }
 
-        public void Excluir(int id)
+        public void Exclui(int id)
         {
-            throw new NotImplementedException();
+            listaSerie[id].Excluir();
         }
 
-        public void Insere(Serie entidade)
+        public void Insere(Serie obj)
         {
-            throw new NotImplementedException();
+            listaSerie.Add(obj);
         }
 
         public List<Serie> Lista()
         {
-            throw new NotImplementedException();
+            retorn listaSerie;
         }
 
         public int ProximoId()
         {
-            throw new NotImplementedException();
+            return listaSerie.Count;
         }
 
         public Serie RetornaPorId(int id)
         {
-            throw new NotImplementedException();
+            return listaSerie[id];
         }
     }
 }
