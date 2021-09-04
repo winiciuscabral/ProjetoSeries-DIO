@@ -1,7 +1,8 @@
-namespace Dig.series
+namespace ProjetoSeries
 {
     public abstract class Principal
     {
-        public int Id { get; set; }
+        public int Id { get; protected set; }
+
     }
 }
